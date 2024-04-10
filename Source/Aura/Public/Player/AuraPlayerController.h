@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
-#include "InputMappingQuery.h"
 #include "AuraPlayerController.generated.h"
 
 class UInputMappingContext;
@@ -14,6 +13,7 @@ struct FInputActionValue;
 /**
  * 
  */
+
 UCLASS()
 class AURA_API AAuraPlayerController : public APlayerController
 {
