@@ -14,6 +14,11 @@ AAuraCharacterBase::AAuraCharacterBase()
 
 }
 
+TObjectPtr<UAuraAbilitySystemComponent> AAuraCharacterBase::GetAbilitySystemComponent() const
+{
+	return AbilitySystemComponent;
+}
+
 void AAuraCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
