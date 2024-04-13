@@ -11,7 +11,6 @@ AAuraCharacterBase::AAuraCharacterBase()
 	Weapon = CreateDefaultSubobject<USkeletalMeshComponent>("Weapon");
 	Weapon->SetupAttachment(Enemy, FName("WeaponHandSocket"));
 	Weapon->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-
 }
 
 TObjectPtr<UAuraAbilitySystemComponent> AAuraCharacterBase::GetAbilitySystemComponent() const
@@ -22,6 +21,5 @@ TObjectPtr<UAuraAbilitySystemComponent> AAuraCharacterBase::GetAbilitySystemComp
 void AAuraCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
