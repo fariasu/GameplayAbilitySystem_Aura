@@ -19,7 +19,7 @@ class AURA_API AAuraCharacterBase : public ACharacter, public IAbilitySystemInte
 public:
 	AAuraCharacterBase();
 
-	virtual TObjectPtr<UAuraAbilitySystemComponent> GetAbilitySystemComponent() const override;
+	virtual UAuraAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	UAttributeSet* GetAttributeSet() const { return AttributeSet; }
 	
 protected:

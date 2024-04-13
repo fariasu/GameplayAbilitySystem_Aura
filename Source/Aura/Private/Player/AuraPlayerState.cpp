@@ -18,7 +18,7 @@ AAuraPlayerState::AAuraPlayerState()
 	NetUpdateFrequency = 100.f;
 }
 
-TObjectPtr<UAuraAbilitySystemComponent> AAuraPlayerState::GetAbilitySystemComponent() const
+UAuraAbilitySystemComponent* AAuraPlayerState::GetAbilitySystemComponent() const
 {
 	return AbilitySystemComponent;
 }

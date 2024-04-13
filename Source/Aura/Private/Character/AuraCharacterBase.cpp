@@ -13,9 +13,9 @@ AAuraCharacterBase::AAuraCharacterBase()
 	Weapon->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 }
 
-TObjectPtr<UAuraAbilitySystemComponent> AAuraCharacterBase::GetAbilitySystemComponent() const
+UAuraAbilitySystemComponent* AAuraCharacterBase::GetAbilitySystemComponent() const
 {
-	return AbilitySystemComponent;
+	return  AbilitySystemComponent;
 }
 
 void AAuraCharacterBase::BeginPlay()
