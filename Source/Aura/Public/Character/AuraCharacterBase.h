@@ -7,6 +7,7 @@
 #include "GameFramework/Character.h"
 #include "AuraCharacterBase.generated.h"
 
+class UAttributeSet;
 class UAuraAbilitySystemComponent;
 class UAuraAttributeSet;
 
@@ -19,7 +20,7 @@ public:
 	AAuraCharacterBase();
 
 	virtual TObjectPtr<UAuraAbilitySystemComponent> GetAbilitySystemComponent() const override;
-	UAuraAttributeSet* GetAttributeSet() const { return AttributeSet; }
+	UAttributeSet* GetAttributeSet() const { return AttributeSet; }
 	
 protected:
 	virtual void BeginPlay() override;
@@ -33,5 +34,5 @@ protected:
 	TObjectPtr<UAuraAbilitySystemComponent> AbilitySystemComponent;
 
 	UPROPERTY()
-	TObjectPtr<UAuraAttributeSet> AttributeSet;
+	TObjectPtr<UAttributeSet> AttributeSet;
 };
