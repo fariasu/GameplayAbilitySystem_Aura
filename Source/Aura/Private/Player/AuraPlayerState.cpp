@@ -18,7 +18,7 @@ AAuraPlayerState::AAuraPlayerState()
 	NetUpdateFrequency = 100.f;
 }
 
-UAuraAbilitySystemComponent* AAuraPlayerState::GetAbilitySystemComponent() const
+UAbilitySystemComponent* AAuraPlayerState::GetAbilitySystemComponent() const
 {
 	return AbilitySystemComponent;
 }
