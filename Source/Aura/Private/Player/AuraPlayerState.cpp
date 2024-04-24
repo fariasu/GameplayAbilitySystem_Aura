@@ -33,5 +33,5 @@ UAbilitySystemComponent* AAuraPlayerState::GetAbilitySystemComponent() const
 
 void AAuraPlayerState::OnRep_Level(int32 OldLevel)
 {
-	
+	// Called when the Level is changed
 }
