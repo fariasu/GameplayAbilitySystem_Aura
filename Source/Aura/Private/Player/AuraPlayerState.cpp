@@ -34,4 +34,5 @@ UAbilitySystemComponent* AAuraPlayerState::GetAbilitySystemComponent() const
 void AAuraPlayerState::OnRep_Level(int32 OldLevel)
 {
 	// Called when the Level is changed
+	GEngine->AddOnScreenDebugMessage(1, 1.f, FColor::Black, FString((FString::FromInt(OldLevel)), false));
 }
